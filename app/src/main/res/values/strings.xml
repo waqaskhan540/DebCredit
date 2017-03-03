@@ -5,8 +5,8 @@
     <string name="Main_AddBtn">Add Record</string>
     <string name="Main_RecordsBtn">Records</string>
 
-    <string name="Banner">ca-app-pub-7401499932601449/3948295213</string>
-<string name="inter">ca-app-pub-7401499932601449/6901761614</string>
+    <string name="Banner">{YOUR_BANNER_ID}</string>
+<string name="inter">{YOUR_INTERSTITIAL_ADD_ID}</string>
 
     <string name="app_link">https://play.google.com/store/apps/details?id=com.endive.easycredit</string>
 
