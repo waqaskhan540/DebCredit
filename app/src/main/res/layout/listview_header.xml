@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_weight="100"
+    android:background="#64B5F6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+        <TextView
+            android:text="Date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDate"
+            android:layout_weight="25"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            />
+
+        <TextView
+            android:text="Credit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCredit"
+            android:layout_weight="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewEnd"
+            android:gravity="end" />
+
+        <TextView
+            android:text="Debit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDebit"
+            android:layout_weight="25"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="viewEnd"
+            android:gravity="end" />
+
+        <TextView
+            android:text="Total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTotal"
+            android:layout_weight="25"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewEnd"
+            android:gravity="end" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/Banner">
+    </com.google.android.gms.ads.AdView>
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/lvRecords"-->
+
+        <!--android:background="?attr/colorControlHighlight" />-->
+
+    <ListView
+        android:id="@+id/lvRecords"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:animationCache="false"
+        android:gravity="center"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:background="?attr/colorControlHighlight"
+        android:layout_above="@+id/adView"
+        android:stretchMode="columnWidth" >
+    </ListView>
+
+
+</RelativeLayout>

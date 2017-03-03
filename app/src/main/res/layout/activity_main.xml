@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="100"
+
+    tools:context="app.waqas.com.debcredit.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:srcCompat="@drawable/moreapps"
+            android:id="@+id/moreapps"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:srcCompat="@drawable/share"
+            android:id="@+id/share"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="70"
+    android:paddingTop="5dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="0dp"
+    >
+    <TextView
+        android:text="EasyCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLogo"
+        android:textColor="@color/colorPrimary"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        tools:text="EasyCredit" />
+    <!--</LinearLayout>-->
+    <Button
+        android:text="@string/Main_AddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bg_btn"
+        android:id="@+id/btnAddRecord"
+        android:textColor="#ffffff"
+     />
+
+    <Button
+        android:text="Reports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnRecordsReport"
+     />
+
+    <Button
+        android:text="Today's transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTodayData"
+        tools:text="Today's transactions"
+        android:textColor="#ffffff"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:text="Delete all Records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDeleteData"
+        android:textColor="#ffffff"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:text="ABOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAbout"
+        android:textColor="#ffffff"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:weightSum="1">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ads:adSize="BANNER"
+        android:layout_centerHorizontal="true"
+
+
+        ads:adUnitId="@string/Banner"
+        android:layout_weight="30">
+    </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+</LinearLayout>
